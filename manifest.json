@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+	"name": "Invert",
+	"description": "Invierte los colores de un sitio",
+	"version": "1.0",
+  "background": {
+      "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Invertir colores"
+  },
+  "permissions": ["storage", "scripting", "tabs", "activeTab"],
+  "commands": {
+      "use-invert": {
+          "suggested_key": {
+              "default": "Ctrl+I"
+          },
+          "description": "Invierte los colores"
+      }
+  }
+}
